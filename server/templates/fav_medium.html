@@ -1,0 +1,46 @@
+<html lang="en">
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{url_for('static',filename='styles/fav_medium.css')}}">
+        <title>Last 6 Months</title>
+    </head>
+
+    <body>
+        <ul>
+            <li style="float:left"><a href="/">Home</a></li>
+            <li style="float:left"><a style="background-color: forestgreen" href="/top/user-fav-short">Top songs</a></li>
+            <li style="float:left"><a href="/view-recent">Recently Played</a></li>
+            <li style="float:left"><a href="/search-avail">Country Finder</a></li>
+            <li style="float:right"><a href="/account">Account</a></li>
+        </ul>
+        
+        <div class="values">
+            <h1>Last 6 Months</h1>
+            <div class="buttons">
+            <a class = "short" href='/top/user-fav-short'>4 Weeks</a>
+            <a class = "medium" href='/top/user-fav-medium'>6 Months</a>
+            <a class = "long" href='/top/user-fav-long'>12 Months</a>
+            </div>
+        <table>
+            <tbody>
+
+                    {% set counter = namespace(value=1) %}
+                    {% for val in data %}
+                <tr>
+                    <td class="count">{{ counter.value }}.</td>
+                    <td class="trackart"> <img src="{{val['album']['images'][2]['url']}}"></td> 
+                    <td class="name">{{ val['name'] }}</td>
+                    <td class="artist">{{ val['artists'][0]['name'] }}</td> 
+                    <td class="splink"><a href="{{val['external_urls']['spotify']}}" target="_blank" rel="noopener noreferrer"><img src="..\static\spcolor.png" alt="Spotify Link" style="width:30px; height:30px"></a></td>
+                </tr>
+                    {% set counter.value = counter.value+1 %}
+                    {% endfor %}
+                   
+            </tbody>
+        </table>
+            <div class="fbotton">
+            <a href="/create-playlist-medium"> <div class="playlist">Create Playlist </div></a>
+            </div>
+        </div>
+    </body>
+
+</html>

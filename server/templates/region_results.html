@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <h1>Results</h1>
+    </head>
+
+    <body>
+        <img src="{{data['album']['images'][1]['url']}}">
+        <p>{{data['name']}}</p>
+
+        {% if flag==0 %}
+        {% for val in data['available_markets'] %}
+        <li>{{val}}</li>
+        {% endfor %}
+        
+        {% else %}
+        <p>Is Playable: {{data['is_playable']}}</p>
+        {% if data['is_playable']==False %}
+        <p>Reason: {{data['restrictions']['reason']}}</p>
+        {% endif %}
+        {% endif %}
+
+    </body>
+
+</html>
