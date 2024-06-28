@@ -2,10 +2,17 @@
 <html>
 
     <head>
-        <h1>Results</h1>
+        <link rel= "stylesheet" type= "text/css" href= "{{url_for('static',filename='styles/region_results.css')}}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <title>Region Availability</title>
     </head>
 
     <body>
+        <div class="container">
+        <h1>Region Availability</h1>
         <img src="{{data['album']['images'][1]['url']}}">
         <p>{{data['name']}}</p>
 
@@ -20,7 +27,7 @@
         <p>Reason: {{data['restrictions']['reason']}}</p>
         {% endif %}
         {% endif %}
-
+        </div>
     </body>
 
 </html>

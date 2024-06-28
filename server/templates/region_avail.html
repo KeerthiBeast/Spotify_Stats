@@ -2,10 +2,26 @@
 <html>
 
     <head>
-        <h1>Region Availability Finder</h1>
+        <link rel= "stylesheet" type= "text/css" href= "{{url_for('static',filename='styles/region_avail.css')}}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <title>Region Availability</title>
     </head>
 
     <body>
+        <ul>
+            <li style="float:left"><a href="/">Home</a></li>
+            <li style="float:left"><a href="/top/user-fav-short">Top songs</a></li>
+            <li style="float:left"><a href="/view-recent">Recently Played</a></li>
+            <li style="float:left"><a style="background-color: forestgreen" href="/search-avail">Country Finder</a></li>
+            <li style="float:right"><a href="/account">Account</a></li>
+        </ul>
+
+        <div class="container">
+        <h1>Region Availability Finder</h1>
+        <div class="frm">
         <form action="/search-avail" method="post">
             <lable for="track_id">ID: </lable>
             <input type="text" id="track_id" name="track_id" placeholder="ID">
@@ -13,6 +29,8 @@
             <input type="text" id="cc" name="cc" placeholder="Example: IN, US, JP">
             <button type="submit">Submit</button>
         </form>
+        </div>
+        </div>
     </body>
 
 </html>
