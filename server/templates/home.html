@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{url_for('static',filename='styles/home.css')}}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <title>Home</title>
+    </head>
+
+    <body>
+        <ul>
+            <li style="float:left"><a style="background-color: forestgreen;" href="/">Home</a></li>
+            <li style="float:left"><a href="/top/user-fav-short">Top songs</a></li>
+            <li style="float:left"><a href="/view-recent">Recently Played</a></li>
+            <li style="float:left"><a href="/search-avail">Country Finder</a></li>
+            <li style="float:right"><a href="/account">Account</a></li>
+        </ul>
+
+        <div class="container">
+            <div class="info">
+                <h1>Spotify Stats</h1>
+                <div class="btcon">
+                    <a href="/top/user-fav-short"><div class="button">User Favourite Music</div></a>
+                    <a href="/view-recent"><div class="button">Recently Played</div></a>
+                    <a href="/search-avail"><div class="button">Search Availability</div></a>
+                </div>    
+            </div>
+
+            <div class="explain">
+            <p>Spotify stats has many feature that I know and 
+                you will come to know
+            </p>
+            </div>
+        </div>
+
+        
+    </body>
+</html>

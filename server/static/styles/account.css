@@ -1,0 +1,86 @@
+body {
+    background-color: #202124;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 5px;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: 'JetBrains Mono';
+    font-size: 14px;
+}
+
+img {
+    border-radius: 50%;
+}
+h1 {
+    font-size: 6vh;
+    color: white;
+    font-family: 'Press Start 2P';
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.info {
+    display: inline-flex;
+    flex-direction: colume;
+    justify-content: center;
+    align-items: center;
+    width: 80vh;
+    height: 20vh;
+    background-color: white;
+    border-radius: 50px;
+}
+p span{
+    display: block;
+    margin-top: 10px;
+    font-family: 'JetBrains Mono';
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+    font-size: 12px;
+    font-family: 'Press Start 2P';
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+li a:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,94 @@
+body {
+    background-color: #202124;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: 'JetBrains Mono';
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    padding: 10px 20px;
+    border-radius: 30px;
+    height: 50vh;
+    width: 50%;
+}
+
+h1 {
+    color: black;
+    font-size: 5.5vh;
+    font-family: 'Press Start 2P';
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.btcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 15vh;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: forestgreen;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-family: 'JetBrains Mono';
+    font-size: 14px;
+}
+
+.explain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: grey;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+li a:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,60 @@
+body {
+    background-color: #202124;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P';
+    font-weight: bold;
+}
+table {
+    background-color: #202124;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 100%;
+    border-spacing: 10px;
+    border-radius: 30px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 5px;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: 'JetBrains Mono';
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 6vh;
+    color: white;
+}
+
+.track {
+    text-align: left;
+    color: white;
+    font-family: 'JetBrains Mono';
+}
+.artist {
+    text-align: left;
+    color: white;
+    font-family: 'JetBrains Mono';
+}
+
+li a:hover {
+    background-color: #0056b3;
+}
