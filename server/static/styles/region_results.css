@@ -1,0 +1,62 @@
+body {
+    background-color: #202124;
+}
+h1 {
+    font-family: 'Press Start 2P';
+    font-weight: bold;
+    font-size: 5vh;
+    color: white;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 5px;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: 'JetBrains Mono';
+    font-size: 14px;
+}
+p {
+    font-family: 'JetBrains Mono';
+    font-weight: bold;
+    color: white;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.country_grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px;
+}
+.flag .fi {
+    width: 64px;
+    height: 64px;
+}
+
+.c2 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50vh;
+}
+p span{
+    display: block;
+    margin-top: 10px;
+    font-family: 'JetBrains Mono';
+}
