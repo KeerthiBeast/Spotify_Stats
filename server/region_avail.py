@@ -18,7 +18,7 @@ def search_avail():
             return redirect('/login')
 
         if datetime.now().timestamp() > session['expires_at']:
-            return redirect('/refresh_token')
+            return redirect('/refresh-token')
         
         headers = {
             'Authorization': f"Bearer {session['access_token']}"

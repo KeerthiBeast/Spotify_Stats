@@ -7,24 +7,40 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"/>
         <title>Region Availability</title>
     </head>
 
     <body>
+        <ul>
+            <li style="float:left"><a href="/">Home</a></li>
+            <li style="float:left"><a href="/top/user-fav-short">Top songs</a></li>
+            <li style="float:left"><a href="/view-recent">Recently Played</a></li>
+            <li style="float:left"><a style="background-color: forestgreen" href="/search-avail">Country Finder</a></li>
+            <li style="float:right"><a href="/account">Account</a></li>
+        </ul>
+
         <div class="container">
         <h1>Region Availability</h1>
         <img src="{{data['album']['images'][1]['url']}}">
         <p>{{data['name']}}</p>
-
+        
+        <div class="country_grid">
         {% if flag==0 %}
         {% for val in data['available_markets'] %}
-        <li>{{val}}</li>
+        <div class="flag">
+        <span class="fi fi-{{val.lower()}}" title="{{val}}"></span>
+        <!-- <li>{{val}}</li> -->
+        </div> 
         {% endfor %}
-        
+        </div>
+        </div>
+
         {% else %}
-        <p>Is Playable: {{data['is_playable']}}</p>
+        <div class="c2">
+        <p><span>Is Playable: {{data['is_playable']}}</span>
         {% if data['is_playable']==False %}
-        <p>Reason: {{data['restrictions']['reason']}}</p>
+        <span>Reason: {{data['restrictions']['reason']}}</span></p>
         {% endif %}
         {% endif %}
         </div>
