@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <link rel= "stylesheet" type= "text/css" href= "{{url_for('static',filename='styles/account.css')}}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <title>Account Info</title>
     </head>
 
     <body>
+        <ul>
+            <li style="float:left"><a href="/">Home</a></li>
+            <li style="float:left"><a href="/top/user-fav-short">Top songs</a></li>
+            <li style="float:left"><a href="/view-recent">Recently Played</a></li>
+            <li style="float:left"><a href="/search-avail">Country Finder</a></li>
+            <li style="float:right"><a style="background-color: forestgreen;" href="/account">Account</a></li>
+        </ul>
+        <h1 class="heading">Account Info</h1>
+        <div class="container">
         <p><img src="{{data[3]}}"></p>
-        <p>{{data[1]}}</p>
-        <p>{{data[0]}}</p>
-        <p>{{data[2]}}</p>
-    
-        <a href="/logout">Logout</a>
+        <div class="info">
+            <p><span>Name: {{data[1]}}</span>
+            <span>Spotify ID: {{data[0]}}</span>
+            <span>Product Type: {{data[2]}}</span></p>
+        </div>
+        <a href="/logout"><div class="button">Logout</div></a>
+        </div>
     </body>
 </html>

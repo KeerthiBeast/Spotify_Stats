@@ -1,6 +1,9 @@
 body {
     background-color: #202124;
 }
+img {
+    border-radius: 50%;
+}
 
 .values {
     display: flex;
@@ -33,11 +36,14 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    font-family: 'JetBrains Mono';
+    font-size: 14px;
 }
-
 h1 {
-    font-size: 6vh;
     color: white;
+    font-family: 'Press Start 2P';
+    font-size: 6vh;
+    font-weight: bold;
 }
 
 .buttons {
@@ -60,6 +66,8 @@ h1 {
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: 'JetBrains Mono';
+    font-size: 14px;
 }
 .medium {
     display: inline-block;
@@ -74,6 +82,8 @@ h1 {
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: 'JetBrains Mono';
+    font-size: 14px;
 }
 .long {
     display: inline-block;
@@ -87,6 +97,8 @@ h1 {
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: 'JetBrains Mono';
+    font-size: 14px;
 }
 .fbotton {
     display: inline-flex;
@@ -107,11 +119,14 @@ h1 {
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: 'Press Start 2P';
+    font-size: 12px;
 }
 
 .count {
     text-align: left;
     color: white;
+    font-family: 'JetBrains Mono';
 }
 .trackart {
     text-align: left;
@@ -119,20 +134,22 @@ h1 {
 .name {
     text-align: left;
     color: white;
+    font-family: 'JetBrains Mono';
 }
 .artist {
     text-align: left;
     color: white;
+    font-family: 'JetBrains Mono';
 }
 .splink {
     text-align: center;
     width: 10%
 }
 
-.medium:hover {
+.long:hover {
     background-color: forestgreen;
 }
-.long:hover {
+.medium:hover {
     background-color: forestgreen;
 }
 .playlist:hover {

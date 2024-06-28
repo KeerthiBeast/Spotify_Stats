@@ -4,6 +4,7 @@ from flask import Flask, redirect, render_template
 from flask import Blueprint
 from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv, dotenv_values
+from datetime import datetime, timedelta
 
 def create_app():
     app = Flask(__name__)
@@ -11,6 +12,10 @@ def create_app():
     
     @app.route('/')
     def index():
+        if 'access_token' in session:
+            if datetime.now().timestamp() < session['expires_at']:
+               return render_template('home.html') 
+
         return render_template('index.html')
 
     @app.route('/pages')

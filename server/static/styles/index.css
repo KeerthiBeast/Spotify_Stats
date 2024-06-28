@@ -19,6 +19,8 @@ li a {
     text-decoration: none;
     background-color: forestgreen;
     transition: background-color 0.3s ease;
+    font-family: 'JetBrains Mono';
+    font-size: 14px;
 }
 
 .container {
@@ -44,7 +46,9 @@ li a {
 
 h1 {
     color: black;
-    font-size: 7vh;
+    font-size: 6vh;
+    font-family: 'Press Start 2P';
+    font-weight: bold;
 }
 
 .btcon {
@@ -66,6 +70,7 @@ h1 {
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: 'JetBrains Mono';
 }
 
 .explain {

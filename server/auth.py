@@ -61,7 +61,12 @@ def callback():
         session['profile_pic'] = userid_json['images'][1]['url']
         session['product'] = userid_json['product']
 
-        return redirect('/pages')
+        if(session['product'] == 'premium'):
+            session['product'] = 'Premium'
+        else:
+            session['product'] = 'free'
+
+        return redirect('/')
 
 @auth.route('/refresh-token')
 def refresh_token():
@@ -83,4 +88,4 @@ def refresh_token():
         session['access_token'] =  new_token_info['access_token']
         session['expires_at'] = datetime.now().timestamp() + new_token_info['expires_in']
 
-        return redirect('/pages')
+        return redirect('/')
