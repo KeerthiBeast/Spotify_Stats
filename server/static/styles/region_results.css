@@ -43,6 +43,9 @@ p {
     grid-template-columns: repeat(10, 1fr);
     gap: 20px;
 }
+p {
+    text-align: center;
+}
 .flag .fi {
     width: 64px;
     height: 64px;
