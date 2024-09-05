@@ -2,7 +2,6 @@ import os
 from flask import session
 from flask import Flask, redirect, render_template
 from flask import Blueprint
-from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv, dotenv_values
 from datetime import datetime, timedelta
 
